@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Hello, world!</title>
+    <style>
+      #loader {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+      <a class="navbar-brand" href="#">Company Name</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enterprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navbar ends -->
+    <!-- Header -->
+    <div class="pricing-title text-center py-5">
+      <h1>Pricing</h1>
+      <p>
+        Quickly build an effective pricing table for your potential customers
+        with this <br />
+        example. It's built with default Bootstrap components and utilities
+        with<br />
+        little customization.
+      </p>
+    </div>
+    <!-- Header ends -->
+    <!-- Card Section -->
+    <div class="container text-center">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-gray text-center">
+              <h5 class="card-title">Free</h5>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-text">$0 /mo</h3>
+              <p>
+                10 users included <br />
+                2 GB of storage<br />
+                Email support<br />
+                Help center access
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-primary btn-lg"
+                data-toggle="modal"
+                data-target="#pricingModal"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-gray text-center">
+              <h5 class="card-title">Pro</h5>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-text">$15/ mo</h3>
+              <p>
+                20 users included <br />
+                10 GB of storage<br />
+                Priority email support<br />
+                Help center access
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#pricingModal"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header bg-gray text-center">
+              <h5 class="card-title">Enterprise</h5>
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-text">$29/ mo</h3>
+              <p>
+                30 users included <br />
+                15 GB of storage<br />
+                Phone and email support<br />
+                Help center access
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#pricingModal"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card section ends -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="pricingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="pricingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pricingModalLabel">Get Started</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              id="myForm"
+              action=" https://forms.maakeetoo.com/formapi/501"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="firstname">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Order Comments</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Enter your order comments"
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider -->
+    <div class="container text-center mt-5">
+      <input
+        type="range"
+        min="0"
+        max="30"
+        value="0"
+        class="custom-slider"
+        id="userSlider"
+      />
+      <div class="pricing-plans mt-3">
+        <div class="plan">0-10 users</div>
+        <div class="plan">10-20 users</div>
+        <div class="plan">20-30 users</div>
+      </div>
+    </div>
+    <!-- slider ends -->
+    <!-- Lazy loading -->
+    <div id="dataContainer"></div>
+    <div id="loader">
+      <p>Loading more content...</p>
+    </div>
+    <!-- lazy loading ends here -->
+    <!-- JavaScript -->
+    <script>
+      const slider = document.getElementById("userSlider");
+      const plans = document.querySelectorAll(".plan");
+      const cards = document.querySelectorAll(".card");
+
+      slider.addEventListener("input", () => {
+        const sliderValue = parseInt(slider.value);
+        plans.forEach((plan, index) => {
+          if (sliderValue >= index * 10 && sliderValue < (index + 1) * 10) {
+            plan.classList.add("active");
+            cards[index].classList.add("active-card");
+          } else {
+            plan.classList.remove("active");
+            cards[index].classList.remove("active-card");
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetchDataFromMakeeto();
+      });
+
+      function fetchDataFromMakeeto() {
+        const endpoint = " https://forms.maakeetoo.com/formapi/501";
+        const accessCode = "C48P8BM8NT188TF7PQHNQTMGL";
+
+        fetch(endpoint, {
+          method: "GET",
+          headers: {
+            Code: accessCode,
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Handle the data retrieved from Makeeto
+            console.log(data);
+          })
+          .catch((error) => {
+            console.error("Error fetching data from Makeeto:", error);
+          });
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        let currentPage = 1;
+
+        function fetchData() {
+          fetch(
+            `https://jsonplaceholder.typicode.com/todos?_page=${currentPage}&_limit=20`
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              appendData(data);
+              if (data.length > 0) {
+                currentPage++;
+              } else {
+                // If no more data, remove loader
+                document.getElementById("loader").style.display = "none";
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching data:", error);
+            });
+        }
+
+        function appendData(data) {
+          const container = document.getElementById("dataContainer");
+          data.forEach((item) => {
+            const div = document.createElement("div");
+            div.innerText = item.title;
+            container.appendChild(div);
+          });
+        }
+
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              fetchData();
+            }
+          });
+        }, options);
+
+        observer.observe(document.getElementById("loader"));
+      });
+    </script>
+
+    <!-- External Libraries -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
